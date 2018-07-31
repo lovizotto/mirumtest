@@ -1,0 +1,20 @@
+.Avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ccc;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  font-size: 12px;
+  cursor: pointer;
+
+  input[type='file'] {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}

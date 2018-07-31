@@ -1,0 +1,29 @@
+.TextField {
+  
+  label {
+    margin: 16px 0 8px 0;
+    font-size: 14px;
+    display: block;
+  }
+
+  input {
+    border: 1px solid #ccc;
+    height: 40px;
+    min-width: 100px;
+    padding: 4px 8px;
+    outline: none;
+    width: 100%;
+    &:hover {
+        border: 1px solid #333;
+    }
+  }
+
+  input:invalid {
+    border: 1px solid red
+  }
+
+  input:valid {
+    border: 1px solid #ccc;
+  }
+
+}
