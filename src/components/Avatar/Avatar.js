@@ -16,11 +16,24 @@ class Avatar extends Component {
     }
   }
 
+  handleClick = () => {
+    if (this.inputFile) {
+      this.inputFile.click();
+    }
+  };
+
+  handleFileChoose = () => {
+  };
+
   render() {
     return (
-      <div className="Avatar" onClick={() => {}}>
+      <div className="Avatar" onClick={this.handleClick}>
         <div>{this.props.label}</div>
-        <input type="file"/>
+        <input
+            type="file"
+            ref={inputFile => this.inputFile = inputFile}
+            onChange={this.handleFileChoose}
+        />
       </div>
     );
   }
